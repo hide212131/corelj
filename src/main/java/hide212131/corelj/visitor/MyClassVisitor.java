@@ -2,7 +2,8 @@ package hide212131.corelj.visitor;
 
 import hide212131.corelj.json.ClassEntry;
 import hide212131.corelj.json.MethodEntry;
-import org.objectweb.asm.*;
+import org.objectweb.asm.ClassVisitor;
+import org.objectweb.asm.Opcodes;
 
 public class MyClassVisitor extends ClassVisitor {
 

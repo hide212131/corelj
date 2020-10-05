@@ -7,7 +7,7 @@ public class SignatureFilter {
     public boolean match(String signature) {
         SignatureFilter filter = this.next;
         while (filter != null) {
-            if (! filter.match(signature)) {
+            if (!filter.match(signature)) {
                 return false;
             }
         }
@@ -35,7 +35,7 @@ public class SignatureFilter {
             next = new SignatureFilter() {
                 @Override
                 public boolean match(String signature) {
-                    return ! signature.matches("^.*" + pattern + ".*$");
+                    return !signature.matches("^.*" + pattern + ".*$");
                 }
             };
             return next;
