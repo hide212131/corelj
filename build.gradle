@@ -31,4 +31,10 @@ dependencies {
     implementation group: 'commons-cli', name: 'commons-cli', version: '1.4'
     // https://mvnrepository.com/artifact/org.ow2.asm/asm
     implementation group: 'org.ow2.asm', name: 'asm', version: '9.0'
+    // https://mvnrepository.com/artifact/com.google.guava/guava
+    implementation group: 'com.google.guava', name: 'guava', version: '29.0-jre'
+    // https://mvnrepository.com/artifact/com.google.code.findbugs/annotations
+    compileOnly group: 'com.google.code.findbugs', name: 'annotations', version: '3.0.1'
+    // https://mvnrepository.com/artifact/com.google.code.findbugs/jsr305
+    compileOnly group: 'com.google.code.findbugs', name: 'jsr305', version: '3.0.2'
 }
